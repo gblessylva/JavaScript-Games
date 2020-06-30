@@ -1,0 +1,89 @@
+*{
+  padding: 0;
+  margin:0;
+}
+
+body{
+  text-align:center;
+  font-family: sans-serif;
+}
+ 
+
+#grid{
+ border-collapse: collapse;
+ border-spacing: 0;
+ margin:  auto;
+ width: 90%;
+ margin-top: 60px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+  #grid td{
+    border: 1px solid gray;
+  }
+    @-webkit-keyframes birth {
+      50% {
+        box-shadow: 0 0 0 99px green inset;
+      }
+    }
+    
+    @keyframes birth {
+      50% {
+        box-shadow: 0 0 0 99px green inset;
+      }
+
+      100%{
+        box-shadow: 0 0 0 99px red inset;
+      }
+    }
+
+
+    #grid input[type='checkbox']{
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      height: 20px;
+      width:20px;
+      border: 0;
+      background-color: white;
+      transition: 0.5s;
+    }
+    #grid input[type='checkbox']:checked{
+        background: black;
+        box-shadow: 0 0 0 99px black inset;
+        -webkit-animation: birth 1s;
+        animation: birth 1s;
+      }
+.controls{
+  margin-top: 20px;
+}
+  .controls > button,
+  .controls > .button{
+    box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background:linear-gradient(to bottom, #33bdef 50%, #019ad2 100%);
+    border-radius:6px;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:14px;
+    font-weight:bold;
+    padding:6px 24px;
+    outline: none;
+    border: none;
+  }
+
+  .controls > button:enabled:active, 
+  .controls > .button:active,
+  input[type='checkbox']:checked + label.button {
+    position:relative;
+    top:1px;
+  }
+  #autoplay{
+    position: absolute;
+    clip: rect(0, 0, 0, 0)
+  }
+  button:disabled{
+    background:linear-gradient(to bottom, gray 50%, darkgrey 100%);
+    cursor: not-allowed;
+  }

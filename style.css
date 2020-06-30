@@ -1,0 +1,38 @@
+body{
+  background-color: white;
+  color: brown;
+}
+.intro{
+  text-align: center;
+}
+  .games-container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width:70%;
+    margin: 0 auto;
+  }
+    .games-container > .game-card{
+      width:300px;
+    }
+      .games-container > .game-card > .game-image{
+        width: 300px;
+        height: 300px;
+      }
+      .games-container > .game-card > .game-image > img{
+        width: 100%;
+        height: 100%;
+      }
+      a.play{
+        background-color: darkgreen;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        border-radius: 4px;
+      }
+      a.play:hover{
+        background-color: green;
+      }
