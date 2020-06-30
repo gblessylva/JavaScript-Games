@@ -36,3 +36,14 @@ body{
       a.play:hover{
         background-color: green;
       }
+
+      @media only screen and (max-device-width: 768px) {
+
+        .games-container{
+          flex-direction:column;
+          justify-content: center;
+        }
+        .game-card{
+          margin: 60px auto;
+        }
+      }
